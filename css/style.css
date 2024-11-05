@@ -26,7 +26,7 @@ h3 {
 .container {
   max-width: 1000px;
   margin: 100px auto;
-  padding: 1em 0 5em 0;
+  padding: 1em 0 10em 0;
   display: flex;
   justify-content: space-around;
   background-color: #1b244a;
@@ -41,11 +41,14 @@ h3 {
   border-radius: 10px;
 }
 
-#home-score,
-#guest-score {
-  font-family: "Scoreboard";
+.score {
   color: red;
   font-size: 5rem;
+}
+
+.score,
+.btn {
+  font-family: "Scoreboard";
 }
 
 .btn {
@@ -53,7 +56,6 @@ h3 {
   background-color: #1b244a;
   border: 1px solid white;
   color: white;
-  font-family: "Scoreboard";
   font-size: 1.5rem;
   margin-right: 0.5em;
   margin-left: 0.5em;
@@ -62,4 +64,12 @@ h3 {
 
 .btn:active {
   opacity: 70%;
+}
+
+#new-game {
+  height: 50px;
+  align-self: center;
+  background-color: #1b244a;
+  border: 1px solid white;
+  color: white;
 }
