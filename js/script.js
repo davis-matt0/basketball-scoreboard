@@ -12,6 +12,8 @@ let guestPlusOne = document.getElementById("guest-plus-one");
 let guestPlusTwo = document.getElementById("guest-plus-two");
 let guestPlusThree = document.getElementById("guest-plus-three");
 
+let newGame = document.getElementById("new-game");
+
 homePlusOne.addEventListener("click", () => {
   homeScore += 1;
   homeScoreElement.textContent = homeScore;
@@ -40,4 +42,9 @@ guestPlusTwo.addEventListener("click", () => {
 guestPlusThree.addEventListener("click", () => {
   guestScore += 3;
   guestScoreElement.textContent = guestScore;
+});
+
+newGame.addEventListener("click", () => {
+  homeScoreElement.textContent = 0;
+  guestScoreElement.textContent = 0;
 });

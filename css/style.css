@@ -21,6 +21,7 @@ h3 {
   font-weight: bolder;
   font-size: 3rem;
   margin-bottom: 0.5em;
+  text-shadow: 1px 1px 5px black;
 }
 
 .container {
@@ -62,8 +63,9 @@ h3 {
   border-radius: 10px;
 }
 
-.btn:active {
-  opacity: 70%;
+.btn:active,
+#new-game:active {
+  opacity: 80%;
 }
 
 #new-game {
@@ -72,4 +74,13 @@ h3 {
   background-color: #1b244a;
   border: 1px solid white;
   color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.btn,
+#new-game {
+  box-shadow: 2px 2px 5px black;
 }
